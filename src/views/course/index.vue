@@ -11,7 +11,7 @@
         <label class="el-form-item-label">课程类别</label>
         <el-input v-model="query.courseType" clearable placeholder="课程类别" style="width: 185px;" class="filter-item" @keyup.enter.native="crud.toQuery" />
         <label class="el-form-item-label">课程性质(必修,选修等)</label>
-        <el-input v-model="query.courseNature" clearable placeholder="课程性质(必修,选修等)" style="width: 185px;" class="filter-item" @keyup.enter.native="crud.toQuery" />
+        <el-input v-model="query.courseNature" clearable placeholder="课程性质(必修,选修等)" style="width: 200px;" class="filter-item" @keyup.enter.native="crud.toQuery" />
         <label class="el-form-item-label">学分</label>
         <el-input v-model="query.credit" clearable placeholder="学分" style="width: 185px;" class="filter-item" @keyup.enter.native="crud.toQuery" />
         <label class="el-form-item-label">总学时数</label>
@@ -24,12 +24,12 @@
         <el-input v-model="query.forProfessional" clearable placeholder="面向专业" style="width: 185px;" class="filter-item" @keyup.enter.native="crud.toQuery" />
         <label class="el-form-item-label">开课学期</label>
         <el-input v-model="query.semester" clearable placeholder="开课学期" style="width: 185px;" class="filter-item" @keyup.enter.native="crud.toQuery" />
-        <label class="el-form-item-label">用户昵称</label>
-        <el-input v-model="query.nickName" clearable placeholder="用户昵称" style="width: 185px;" class="filter-item" @keyup.enter.native="crud.toQuery" />
-        <label class="el-form-item-label">用户名</label>
-        <el-input v-model="query.userName" clearable placeholder="用户名" style="width: 185px;" class="filter-item" @keyup.enter.native="crud.toQuery" />
-        <label class="el-form-item-label">用户角色</label>
-        <el-input v-model="query.rolesName" clearable placeholder="用户角色" style="width: 185px;" class="filter-item" @keyup.enter.native="crud.toQuery" />
+<!--        <label class="el-form-item-label">用户昵称</label>-->
+<!--        <el-input v-model="query.nickName" clearable placeholder="用户昵称" style="width: 185px;" class="filter-item" @keyup.enter.native="crud.toQuery" />-->
+<!--        <label class="el-form-item-label">用户名</label>-->
+<!--        <el-input v-model="query.userName" clearable placeholder="用户名" style="width: 185px;" class="filter-item" @keyup.enter.native="crud.toQuery" />-->
+<!--        <label class="el-form-item-label">用户角色</label>-->
+<!--        <el-input v-model="query.rolesName" clearable placeholder="用户角色" style="width: 185px;" class="filter-item" @keyup.enter.native="crud.toQuery" />-->
         <rrOperation :crud="crud" />
       </div>
       <!--如果想在工具栏加入更多按钮，可以使用插槽方式， slot = 'left' or 'right'-->
@@ -46,8 +46,8 @@
           <el-form-item label="课程类别">
             <el-input v-model="form.courseType" style="width: 370px;" />
           </el-form-item>
-          <el-form-item label="课程性质(必修,选修等)">
-            <el-input v-model="form.courseNature" style="width: 370px;" />
+          <el-form-item label="课程性质">
+            <el-input v-model="form.courseNature" style="width: 400px;" />
           </el-form-item>
           <el-form-item label="学分">
             <el-input v-model="form.credit" style="width: 370px;" />
@@ -67,10 +67,10 @@
           <el-form-item label="开课学期">
             <el-input v-model="form.semester" style="width: 370px;" />
           </el-form-item>
-          <span style="padding-left:25px;">当前用户id：{{userId}}</span>
-          <el-form-item label="用户id">
-            <el-input v-model="form.user.id" />
-          </el-form-item>
+<!--          <span style="padding-left:25px;">当前用户id：{{userId}}</span>-->
+<!--          <el-form-item label="用户id">-->
+<!--            <el-input v-model="form.user.id" />-->
+<!--          </el-form-item>-->
         </el-form>
         <div slot="footer" class="dialog-footer">
           <el-button type="text" @click="crud.cancelCU">取消</el-button>

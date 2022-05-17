@@ -58,7 +58,7 @@ export default {
       this.imagePath = require('@/assets/images/background.jpeg')
     }
     if (this.$route.query.values.videoPath !== undefined) {
-      this.videoPath = this.$route.query.values.videoPath
+      // this.videoPath = this.$route.query.values.videoPath
     } else {
       this.videoPath = require('@/assets/test.mp4')
     }
